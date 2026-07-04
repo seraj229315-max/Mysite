@@ -9,7 +9,7 @@ function goToStep(stepId) {
 // 1. عند فتح الموقع: جاري الاتصال بالخوادم لمدة 3 ثوانٍ
 window.onload = function() {
     setTimeout(() => {
-        goToStep('step-name');
+        goToStep('step-initial-load');
     }, 3000);
 };
 
