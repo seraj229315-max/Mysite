@@ -7,11 +7,6 @@ function goToStep(stepId) {
 }
 
 // 1. عند فتح الموقع: جاري الاتصال بالخوادم لمدة 3 ثوانٍ
-window.onload = function() {
-    setTimeout(() => {
-        goToStep('step-name');
-    }, 3000);
-};
 
 // 2. عند الضغط على زر تأكيد الحساب
 function submitName() {
